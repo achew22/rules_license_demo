@@ -18,18 +18,18 @@ load("@rules_license//rules:compliance.bzl", "licenses_used")
 
 licenses_used(
     name = "licenses_used",
-    deps = ["//:test"],
-)
-
-go_library(
-    name = "test_lib",
-    srcs = ["main.go"],
-    importpath = "github.com/achew22/test",
-    visibility = ["//visibility:private"],
+    deps = ["//:rules_license_demo"],
 )
 
 go_binary(
-    name = "test",
-    embed = [":test_lib"],
+    name = "rules_license_demo",
+    embed = [":rules_license_demo_lib"],
     visibility = ["//visibility:public"],
+)
+
+go_library(
+    name = "rules_license_demo_lib",
+    srcs = ["main.go"],
+    importpath = "github.com/achew22/rules_license_demo",
+    visibility = ["//visibility:private"],
 )

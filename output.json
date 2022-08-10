@@ -1,0 +1,12 @@
+[
+  {
+    "rule": "//:license",
+    "license_kinds": [
+    ],
+    "copyright_notice": "",
+    "package_name": "",
+    "package_url": "https://github.com/bazelbuild/bazel-gazelle",
+    "package_version": "v0.31.0",
+    "license_text": "LICENSE"
+  }
+]
